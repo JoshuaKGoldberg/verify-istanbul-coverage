@@ -1,0 +1,130 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'publish' ]
+2 info using npm@3.8.9
+3 info using node@v6.2.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: 'C:\\Code\\verify-istanbul-coverage',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory C:\Users\jogol\AppData\Roaming\npm-cache\verify-istanbul-coverage\0.1.0\package.tgz not in flight; packing
+9 verbose correctMkdir C:\Users\jogol\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+10 info lifecycle verify-istanbul-coverage@0.1.0~prepublish: verify-istanbul-coverage@0.1.0
+11 verbose lifecycle verify-istanbul-coverage@0.1.0~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle verify-istanbul-coverage@0.1.0~prepublish: PATH: C:\Program Files\nodejs\node_modules\npm\bin\node-gyp-bin;C:\Code\verify-istanbul-coverage\node_modules\.bin;C:\Program Files\nodejs;C:\Users\jogol\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\cmd;C:\Users\jogol\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\bin;C:\Users\jogol\AppData\Local\GitHub\PortableGit_f02737a78695063deace08e96d5042710d3e32db\usr\share\git-tfs;C:\Users\jogol\AppData\Local\Apps\2.0\5Y284Z76.G72\JE53L4CV.N4T\gith..tion_317444273a93ac29_0003.0003_5794af8169eeff14;C:\Users\jogol\AppData\Local\GitHub\lfs-amd64_1.5.5;C:\Program Files\Docker\Docker\Resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files (x86)\GitExtensions\;C:\Program Files\MongoDB\Server\3.2\bin;C:\Program Files (x86)\Windows Live\Shared;C:\Program Files\CMake\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files (x86)\Git\cmd;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\jogol\AppData\Roaming\npm;C:\Users\jogol\AppData\Local\Microsoft\WindowsApps;C:\Python27;C:\Program Files\Docker Toolbox;;C:\Program Files (x86)\MSBuild\14.0\bin\;C:\Program Files (x86)\Microsoft SDKs\Windows\v8.1A\bin\NETFX 4.5.1 Tools\x64
+13 verbose lifecycle verify-istanbul-coverage@0.1.0~prepublish: CWD: C:\Code\verify-istanbul-coverage
+14 silly lifecycle verify-istanbul-coverage@0.1.0~prepublish: Args: [ '/d /s /c', 'tsc -p .' ]
+15 silly lifecycle verify-istanbul-coverage@0.1.0~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ 'C:\\Users\\jogol\\AppData\\Roaming\\npm-cache\\verify-istanbul-coverage\\0.1.0\\package.tgz',
+16 verbose tar pack   'C:\\Code\\verify-istanbul-coverage' ]
+17 verbose tarball C:\Users\jogol\AppData\Roaming\npm-cache\verify-istanbul-coverage\0.1.0\package.tgz
+18 verbose folder C:\Code\verify-istanbul-coverage
+19 verbose addLocalTarball adding from inside cache C:\Users\jogol\AppData\Roaming\npm-cache\verify-istanbul-coverage\0.1.0\package.tgz
+20 verbose correctMkdir C:\Users\jogol\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+21 silly cache afterAdd verify-istanbul-coverage@0.1.0
+22 verbose afterAdd C:\Users\jogol\AppData\Roaming\npm-cache\verify-istanbul-coverage\0.1.0\package\package.json not in flight; writing
+23 verbose correctMkdir C:\Users\jogol\AppData\Roaming\npm-cache correctMkdir not in flight; initializing
+24 verbose afterAdd C:\Users\jogol\AppData\Roaming\npm-cache\verify-istanbul-coverage\0.1.0\package\package.json written
+25 silly publish { name: 'verify-istanbul-coverage',
+25 silly publish   version: '0.1.0',
+25 silly publish   description: 'Verifies minimum total covered lines in generated Istanbul reports.',
+25 silly publish   main: 'src/index.js',
+25 silly publish   scripts:
+25 silly publish    { lint: 'tslint --config tslint.json --project tslint.json',
+25 silly publish      prepublish: 'tsc -p .',
+25 silly publish      test: 'jest',
+25 silly publish      watch: 'tsc -p . -w' },
+25 silly publish   repository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'git+https://github.com/JoshuaKGoldberg/verify-istanbul-coverage.git' },
+25 silly publish   keywords: [ 'istanbul', 'code', 'coverage', 'minimum', 'verify' ],
+25 silly publish   author: { name: 'Josh Goldberg', email: 'joshuakgoldberg@outlook.com' },
+25 silly publish   license: 'MIT',
+25 silly publish   bugs: { url: 'https://github.com/JoshuaKGoldberg/verify-istanbul-coverage/issues' },
+25 silly publish   homepage: 'https://github.com/JoshuaKGoldberg/verify-istanbul-coverage#readme',
+25 silly publish   devDependencies:
+25 silly publish    { '@types/jest': '^21.1.8',
+25 silly publish      '@types/mz': '0.0.32',
+25 silly publish      jest: '^21.2.1',
+25 silly publish      'ts-jest': '^21.2.4',
+25 silly publish      tslint: '^5.8.0',
+25 silly publish      tsutils: '^2.13.0',
+25 silly publish      typescript: '^2.6.2' },
+25 silly publish   dependencies: { chalk: '^2.3.0', mz: '^2.7.0' },
+25 silly publish   jest:
+25 silly publish    { collectCoverageFrom: [ 'src/*.ts' ],
+25 silly publish      mapCoverage: true,
+25 silly publish      moduleFileExtensions: [ 'js', 'ts' ],
+25 silly publish      testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.ts$',
+25 silly publish      transform: { '^.+\.ts$': 'ts-jest' } },
+25 silly publish   readme: '# verify-istanbul-coverage\r\n\r\n[![Build Status](https://travis-ci.org/joshuakgoldberg/verify-istanbul-coverage.svg?)](https://travis-ci.org/joshuakgoldberg/verify-istanbul-coverage)\r\n[![NPM version](https://badge.fury.io/js/verify-istanbul-coverage.svg)](http://badge.fury.io/js/verify-istanbul-coverage)\r\n\r\nVerifies minimum total covered lines in generated Istanbul reports.\r\n\r\n## Usage\r\n\r\n### CLI\r\n\r\n```shell\r\nnpm i -g verify-istanbul-coverage\r\n```\r\n\r\n```shell\r\nverify-istanbul-coverage\r\n```\r\n\r\n#### Flags\r\n\r\n* `f`/`--file`: File path to read from. Defaults to `./coverage/lcov-report/index.html`.\r\n* `-m`/`--minimum`: Minimum expected coverage. Defaults to `100`.\r\n\r\n### Node.js\r\n\r\n```javascript\r\nimport { VerificationStatus, verifyCoverage } from "verify-istanbul-coverage";\r\n\r\nasync main() {\r\n    const coverage = await verifyCoverage();\r\n\r\n    if (coverage.status === VerificationStatus.Successful) {\r\n        console.log("All is well!");\r\n    } else {\r\n        console.error(`Failed: expected coverage to be at least ${coverage.minimum} but found ${coverage.actual}.`);\r\n        console.log(`Check ${coverage.file}.`);\r\n    }\r\n}\r\n\r\nmain()\r\n    .catch((error) => {\r\n        console.error(`Error verifying coverage: ${error}`);\r\n    });\r\n```\r\n\r\nLong names of flags can be passed as object members to `verifyCoverage`.\r\nSee [`./index.ts`](./src/index.ts) for the full typings.\r\n\r\n## Development\r\n\r\nFirst clone the repository and install its dependencies:\r\n\r\n```shell\r\ngit clone https://github.com/joshuakgoldberg/verify-istanbul-coverage\r\ncd verify-istanbul-coverage\r\nnpm i\r\n```\r\n\r\n* `npm run watch` runs TypeScript in watch mode.\r\n* `npm run lint` lints with TSLint.\r\n* `npm run test` runs tests in watch mode.\r\n* `npm run prepublish` builds code and runs tests.\r\n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: '044f19cc8b90cf2a47e92437ec4a604fbcc14aeb',
+25 silly publish   _id: 'verify-istanbul-coverage@0.1.0',
+25 silly publish   _shasum: '5837b2772e54ccb88c11733686910715dbe4258e',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name verify-istanbul-coverage
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'verify-istanbul-coverage',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   name: 'verify-istanbul-coverage',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/verify-istanbul-coverage
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading C:\Users\jogol\AppData\Roaming\npm-cache\verify-istanbul-coverage\0.1.0\package.tgz
+34 verbose request uri https://registry.npmjs.org/verify-istanbul-coverage
+35 verbose request sending authorization for write operation
+36 info attempt registry request try #1 at 10:51:18 AM
+37 verbose request using bearer token for auth
+38 verbose request id ff1a2d6788cfe4cd
+39 http request PUT https://registry.npmjs.org/verify-istanbul-coverage
+40 http 403 https://registry.npmjs.org/verify-istanbul-coverage
+41 verbose headers { 'content-type': 'application/json',
+41 verbose headers   'cache-control': 'max-age=300',
+41 verbose headers   'content-length': '91',
+41 verbose headers   'accept-ranges': 'bytes',
+41 verbose headers   date: 'Wed, 13 Dec 2017 18:51:17 GMT',
+41 verbose headers   via: '1.1 varnish',
+41 verbose headers   connection: 'keep-alive',
+41 verbose headers   'x-served-by': 'cache-sea1035-SEA',
+41 verbose headers   'x-cache': 'MISS',
+41 verbose headers   'x-cache-hits': '0',
+41 verbose headers   'x-timer': 'S1513191077.250717,VS0,VE265',
+41 verbose headers   vary: 'Accept-Encoding, Accept' }
+42 verbose request invalidating C:\Users\jogol\AppData\Roaming\npm-cache\registry.npmjs.org\verify-istanbul-coverage on PUT
+43 error publish Failed PUT 403
+44 verbose stack Error: You cannot publish over the previously published version 0.1.0. : verify-istanbul-coverage
+44 verbose stack     at makeError (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:264:12)
+44 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:252:14)
+44 verbose stack     at Request._callback (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:172:14)
+44 verbose stack     at Request.self.callback (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:200:22)
+44 verbose stack     at emitTwo (events.js:106:13)
+44 verbose stack     at Request.emit (events.js:191:7)
+44 verbose stack     at Request.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:1067:10)
+44 verbose stack     at emitOne (events.js:101:20)
+44 verbose stack     at Request.emit (events.js:188:7)
+44 verbose stack     at IncomingMessage.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\request\request.js:988:12)
+45 verbose statusCode 403
+46 verbose pkgid verify-istanbul-coverage
+47 verbose cwd C:\Code\verify-istanbul-coverage
+48 error Windows_NT 10.0.16299
+49 error argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "publish"
+50 error node v6.2.0
+51 error npm  v3.8.9
+52 error code E403
+53 error You cannot publish over the previously published version 0.1.0. : verify-istanbul-coverage
+54 error If you need help, you may report this error at:
+54 error     <https://github.com/npm/npm/issues>
+55 verbose exit [ 1, true ]
