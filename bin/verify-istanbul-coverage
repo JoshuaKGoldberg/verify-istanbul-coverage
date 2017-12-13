@@ -1,0 +1,12 @@
+#!/usr/bin/env node
+
+var cli = require("../src/cli");
+
+cli.runCli(process.argv, console)
+    .then(function (exitCode) {
+        process.exitCode = exitCode;
+    })
+    .catch(function (error) {
+        console.error("Error in verify-istanbul-coverage: " + error);
+        process.exitCode = cli.ExitCode.Error;
+    });

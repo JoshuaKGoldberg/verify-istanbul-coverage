@@ -1,5 +1,8 @@
 # verify-istanbul-coverage
 
+[![Build Status](https://travis-ci.org/joshuakgoldberg/verify-istanbul-coverage.svg?)](https://travis-ci.org/joshuakgoldberg/verify-istanbul-coverage)
+[![NPM version](https://badge.fury.io/js/verify-istanbul-coverage.svg)](http://badge.fury.io/js/verify-istanbul-coverage)
+
 Verifies minimum total covered lines in generated Istanbul reports.
 
 ## Usage
@@ -9,6 +12,7 @@ Verifies minimum total covered lines in generated Istanbul reports.
 ```shell
 npm i -g verify-istanbul-coverage
 ```
+
 ```shell
 verify-istanbul-coverage
 ```
@@ -16,7 +20,7 @@ verify-istanbul-coverage
 #### Flags
 
 * `f`/`--file`: File path to read from. Defaults to `./coverage/lcov-report/index.html`.
-* `-m`/`--minimum`: Minimumn expected coverage. Defaults to `100`.
+* `-m`/`--minimum`: Minimum expected coverage. Defaults to `100`.
 
 ### Node.js
 

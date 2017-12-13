@@ -36,7 +36,6 @@
     "typescript": "^2.6.2"
   },
   "dependencies": {
-    "@types/chalk": "^2.2.0",
     "chalk": "^2.3.0",
     "mz": "^2.7.0"
   },

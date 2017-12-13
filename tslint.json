@@ -6,6 +6,7 @@
         "no-parameter-reassignment": false,
         "no-magic-numbers": [true, -1, 0, 1, 2, 3, 10],
         "no-submodule-imports": false,
+        "switch-default": false,
         "typedef": false
     }
 }
