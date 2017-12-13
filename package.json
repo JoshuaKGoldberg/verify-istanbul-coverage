@@ -1,6 +1,6 @@
 {
   "name": "verify-istanbul-coverage",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Verifies minimum total covered lines in generated Istanbul reports.",
   "main": "src/index.js",
   "scripts": {
@@ -26,6 +26,9 @@
     "url": "https://github.com/JoshuaKGoldberg/verify-istanbul-coverage/issues"
   },
   "homepage": "https://github.com/JoshuaKGoldberg/verify-istanbul-coverage#readme",
+  "bin": {
+    "verify-istanbul-coverage": "./bin/verify-istanbul-coverage"
+  },
   "types": "./src/index.ts",
   "devDependencies": {
     "@types/jest": "^21.1.8",
