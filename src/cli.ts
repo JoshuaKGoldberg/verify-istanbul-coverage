@@ -57,10 +57,10 @@ export const runCli = async (args: string[], logger: Logger): Promise<ExitCode> 
         case VerificationStatus.Failed:
             logger.error([
                 chalk.red("Coverage does not meet the minimum bar of "),
-                chalk.redBright(`${result.minimum}`),
-                chalk.red("%. Found "),
-                chalk.redBright(`${result.actual}`),
-                chalk.red("%."),
+                chalk.redBright(`${result.minimum}%`),
+                chalk.red(". Found "),
+                chalk.redBright(`${result.actual}%`),
+                chalk.red("."),
             ].join(""));
 
             return ExitCode.NotEnoughCoverage;
@@ -68,8 +68,8 @@ export const runCli = async (args: string[], logger: Logger): Promise<ExitCode> 
         case VerificationStatus.Successful:
             logger.log([
                 chalk.green("Coverage meets the minimum bar of "),
-                chalk.greenBright(`${result.minimum}`),
-                chalk.green("%."),
+                chalk.greenBright(`${result.minimum}%`),
+                chalk.green("."),
             ].join(""));
 
             return ExitCode.Success;
