@@ -1,0 +1,37 @@
+{
+  "name": "verify-istanbul-coverage",
+  "version": "0.1.0",
+  "description": "Verifies minimum total covered lines in generated Istanbul reports.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoshuaKGoldberg/verify-istanbul-coverage.git"
+  },
+  "keywords": [
+    "istanbul",
+    "code",
+    "coverage",
+    "minimum",
+    "verify"
+  ],
+  "author": "Josh Goldberg <joshuakgoldberg@outlook.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JoshuaKGoldberg/verify-istanbul-coverage/issues"
+  },
+  "homepage": "https://github.com/JoshuaKGoldberg/verify-istanbul-coverage#readme",
+  "devDependencies": {
+    "@types/mz": "0.0.32",
+    "tslint": "^5.8.0",
+    "tsutils": "^2.13.0",
+    "typescript": "^2.6.2"
+  },
+  "dependencies": {
+    "@types/chalk": "^2.2.0",
+    "chalk": "^2.3.0",
+    "mz": "^2.7.0"
+  }
+}
