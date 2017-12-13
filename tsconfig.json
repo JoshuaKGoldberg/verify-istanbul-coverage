@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "forceConsistentCasingInFileNames": true,
+    "lib": ["es2015"],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "outDir": "src",
+    "rootDir": "src",
+    "strict": true,
+    "sourceMap": true,
+    "target": "es5",
+    "pretty": true
+  },
+  "exclude": [
+    "node_modules",
+    "lib"
+  ],
+  "include": [
+    "src/**/*.ts"
+  ]
+}

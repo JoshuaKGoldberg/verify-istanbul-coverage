@@ -21,12 +21,12 @@ verify-istanbul-coverage
 ### Node.js
 
 ```javascript
-import { verifyCoverage } from "verify-istanbul-coverage";
+import { VerificationStatus, verifyCoverage } from "verify-istanbul-coverage";
 
 async main() {
     const coverage = await verifyCoverage();
 
-    if (coverage.passed) {
+    if (coverage.status === VerificationStatus.Successful) {
         console.log("All is well!");
     } else {
         console.error(`Failed: expected coverage to be at least ${coverage.minimum} but found ${coverage.actual}.`);
@@ -41,6 +41,7 @@ main()
 ```
 
 Long names of flags can be passed as object members to `verifyCoverage`.
+See [`./index.ts`](./src/index.ts) for the full typings.
 
 ## Development
 
@@ -53,5 +54,6 @@ npm i
 ```
 
 * `npm run watch` runs TypeScript in watch mode.
+* `npm run lint` lints with TSLint.
 * `npm run test` runs tests in watch mode.
 * `npm run prepublish` builds code and runs tests.

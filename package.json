@@ -4,7 +4,10 @@
   "description": "Verifies minimum total covered lines in generated Istanbul reports.",
   "main": "src/index.js",
   "scripts": {
-    "test": "jest"
+    "lint": "tslint --config tslint.json --project tslint.json",
+    "prepublish": "tsc -p .",
+    "test": "jest",
+    "watch": "tsc -p . -w"
   },
   "repository": {
     "type": "git",
@@ -24,7 +27,10 @@
   },
   "homepage": "https://github.com/JoshuaKGoldberg/verify-istanbul-coverage#readme",
   "devDependencies": {
+    "@types/jest": "^21.1.8",
     "@types/mz": "0.0.32",
+    "jest": "^21.2.1",
+    "ts-jest": "^21.2.4",
     "tslint": "^5.8.0",
     "tsutils": "^2.13.0",
     "typescript": "^2.6.2"
@@ -33,5 +39,19 @@
     "@types/chalk": "^2.2.0",
     "chalk": "^2.3.0",
     "mz": "^2.7.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/*.ts"
+    ],
+    "mapCoverage": true,
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts$",
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    }
   }
 }

@@ -1,0 +1,11 @@
+{
+    "extends": "tslint:all",
+    "rules": {
+        "interface-name": false,
+        "linebreak-style": false,
+        "no-parameter-reassignment": false,
+        "no-magic-numbers": [true, -1, 0, 1, 2, 3, 10],
+        "no-submodule-imports": false,
+        "typedef": false
+    }
+}
