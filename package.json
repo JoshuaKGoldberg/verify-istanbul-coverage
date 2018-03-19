@@ -1,6 +1,6 @@
 {
   "name": "verify-istanbul-coverage",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Verifies minimum total covered lines in generated Istanbul reports.",
   "main": "src/index.js",
   "scripts": {

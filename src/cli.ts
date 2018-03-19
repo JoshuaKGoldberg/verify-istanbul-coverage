@@ -63,6 +63,12 @@ export const runCli = async (args: string[], logger: Logger): Promise<ExitCode> 
                 chalk.red("."),
             ].join(""));
 
+            logger.log([
+                chalk.red("Check "),
+                chalk.redBright(result.file),
+                chalk.red(" for coverage details."),
+            ].join(""));
+
             return ExitCode.NotEnoughCoverage;
 
         case VerificationStatus.Successful:
